@@ -1,6 +1,6 @@
 [package]
 name = "defillama-rs"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A Rust client for the DefiLlama API"
 license = "Apache-2.0"
@@ -9,10 +9,10 @@ readme = "README.md"
 keywords = ["defi", "defillama"]
 
 [dependencies]
-reqwest = { version = "0.12.15", features = ["json"] }
+reqwest = { version = "0.11.0", features = ["json"] }
 serde = { version = "1.0.219", features = ["derive"] }
 serde_json = "1.0.140"
 thiserror = "2.0.12"
-tokio = { version = "1.45.0", features = ["full"] }
+tokio = { version = "1.0.1", features = ["full"] }
 url = "2.5.4"
 
