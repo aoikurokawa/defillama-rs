@@ -72,7 +72,7 @@ jobs:
             cargo release ${{ inputs.level }} --no-confirm --no-push
           else
             # For actual execution, use the -x flag
-            cargo release ${{ inputs.level }} --no-confirm --no-push -x
+            cargo release ${{ inputs.level }} --no-confirm -x
           fi
           
           # Get new version after update
