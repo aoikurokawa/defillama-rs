@@ -69,10 +69,10 @@ jobs:
           
           if [ "${{ inputs.dry_run }}" == "true" ]; then
             # For dry-run mode, don't use the -x flag (dry-run is default)
-            cargo release ${{ inputs.level }} --no-confirm --no-push
+            cargo release ${{ inputs.level }} --no-push
           else
             # For actual execution, use the -x flag
-            cargo release ${{ inputs.level }} --no-confirm -x
+            cargo release ${{ inputs.level }} -x
           fi
           
           # Get new version after update
