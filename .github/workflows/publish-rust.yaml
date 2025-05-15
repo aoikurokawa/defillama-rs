@@ -27,7 +27,6 @@ jobs:
   publish:
     name: Publish Crate
     runs-on: ubuntu-latest
-    needs: test_sbf
     permissions:
       contents: write
     steps:
