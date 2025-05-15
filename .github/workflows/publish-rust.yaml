@@ -23,6 +23,11 @@ on:
         type: boolean
         default: true
 
+# Set permissions for all jobs
+permissions:
+  contents: write  # Allows creating releases and tags
+  packages: write  # If you need to publish packages
+
 jobs:
   publish:
     name: Publish Crate
